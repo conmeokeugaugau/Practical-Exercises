@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Buoi04
+namespace PracticalExercises
 {
     class Program
     {
@@ -55,12 +55,13 @@ namespace Buoi04
                     }
                     else
                     {
-                        Console.WriteLine("Invalid code!");
+                        product[i] = "Invalid code!";
+                        quantity[i] = 0;
                     }
                 }
 
                 Console.WriteLine("_________________________________________________________________________________________");
-                Console.WriteLine($"{"NO",-10} | {"PRODUCTION NAME",-20} | {"PRICE",12} | {"QUANTITY",12} | {"TOTAL (R$)",12}");
+                Console.WriteLine($"{"No",-10} | {"PRODUCTION NAME",-20} | {"PRICE",12} | {"QUANTITY",12} | {"TOTAL (R$)",12}");
                 for (int i = 0; i < n; i++)
                 {
                     Console.WriteLine($"{i + 1,-10} | {product[i],-20} | {quantity[i],12} | {b[i],12} | {quantity[i] * b[i],12:0.00}");
